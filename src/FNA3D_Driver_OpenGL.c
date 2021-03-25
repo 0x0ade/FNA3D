@@ -4809,7 +4809,8 @@ static void* MOJOSHADERCALL OPENGL_INTERNAL_CompileShader(
 	const MOJOSHADER_swizzle *swiz,
 	const unsigned int swizcount,
 	const MOJOSHADER_samplerMap *smap,
-	const unsigned int smapcount
+	const unsigned int smapcount,
+	const int be
 ) {
 	return MOJOSHADER_glCompileShader(
 		tokenbuf,
@@ -4817,7 +4818,8 @@ static void* MOJOSHADERCALL OPENGL_INTERNAL_CompileShader(
 		swiz,
 		swizcount,
 		smap,
-		smapcount
+		smapcount,
+		be
 	);
 }
 
